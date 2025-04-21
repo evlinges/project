@@ -1,0 +1,40 @@
+/* ==== БАЗОВІ СТИЛІ ==== */
+@font-face {
+  font-family: 'PTSansCustom';
+  src: url('../fonts/PTSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PTSansCustom';
+  src: url('../fonts/PTSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PTSansCustom', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
