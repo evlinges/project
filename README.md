@@ -12,9 +12,9 @@
 
 ##  Технології
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML
+- CSS
+- JavaScript 
 - Google Fonts
 - SlickSlider (для слайдера)
 
