@@ -7,9 +7,6 @@
   });
 </script>
 const start = Date.now();
-
-// …ваш код для бургера, слайдера тощо…
-
 window.addEventListener('load', () => {
   const diff = (Date.now() - start) / 1000;
   console.log(`Час верстки: ${diff.toFixed(2)} секунд`);
