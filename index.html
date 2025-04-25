@@ -6,6 +6,7 @@
   <title>Макет PixelPlus</title>
 
   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
   <!-- Slick slider CSS -->
@@ -16,15 +17,17 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
-  <!-- ХЕДЕР -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="header-container">
       <div class="header-left">
         <a href="#" class="logo">
-          <img src="img/logo.png" alt="Логотип компанії" class="logo-img">
+          <img src="img/logo.png" alt="Логотип компанії" class="logo-img" width="68" height="68">
         </a>
         <div class="logo-text">
           <div class="name">Назва<br>компанії</div>
@@ -33,15 +36,15 @@
       </div>
       <div class="header-right">
         <div class="phones">
-          <p>+7 (499) 777-77-77</p>
-          <p>+7 (499) 777-77-77</p>
+          <p>+380 (68) 777-77-77</p>
+          <p>+380 (68) 777-77-77</p>
         </div>
         <a href="#" class="feedback-link">Зворотний зв'язок</a>
       </div>
     </div>
   </header>
 
-  <!-- МЕНЮ -->
+  <!-- MENU -->
   <nav class="main-menu">
     <div class="menu-container">
       <ul class="menu">
@@ -54,7 +57,7 @@
     </div>
   </nav>
 
-  <!-- СЛАЙДЕР -->
+  <!-- SLIDER -->
   <section class="slider-wrapper">
     <div class="slider">
       <div><img src="img/slide1.jpg" alt="Слайд 1"></div>
@@ -62,12 +65,152 @@
     </div>
   </section>
 
-  <!-- JS бібліотеки -->
+  <!-- JS бібліотеки та ініціалізація слайдера -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- Ініціалізація слайдера -->
   <script src="js/slider.js"></script>
+
+<section class="content">
+    <div class="content-container">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="breadcrumb">
+          <a href="#">Головна</a> /
+          <a href="#">Каталог</a> /
+          <span>Побутова техніка</span>
+        </nav>
+
+        <ul class="category-list">
+          <li><a href="#">Автомобілі</a></li>
+          <li>
+            <a href="#">Побутова техніка</a>
+            <ul class="subcategory-list">
+              <li><a href="#"class="active">Мікрохвильовки</a></li>
+              <li><a href="#">Холодильники</a></li>
+              <li><a href="#">Посудомийні машини</a></li>
+              <li><a href="#">Чайники</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Мобільна техніка</a></li>
+          <li><a href="#">Комп’ютери</a></li>
+          <li><a href="#">Одяг</a></li>
+          <li><a href="#">Нерухомість</a></li>
+        </ul>
+
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMHqp_zhz8TvylIPo6cFIyOe0JklIu-1n4YySbCYkxGqoY8Wrqpm3ZWZ2i_P9O_HYLLJfbNshLMJfq/pub?gid=0&single=true&output=pdf"
+   class="price-list"
+   download>
+  <img src="img/logo_price-list.jpg" alt="Прайс-лист" width="120" height="120">
+  <span>Прайс-лист</span>
+</a>
+      </aside>
+
+      <!-- Головний правий блок -->
+      <div class="main-content">
+
+        <!-- 1) Сітка товарів -->
+        <div class="catalog">
+          <div class="product-card">
+            <img src="img/nophoto.jpg" alt="Найкрутіший чайник">
+            <h3 class="product-title">Найкрутіший чайник, який треба купити!</h3>
+            <div class="product-footer">
+              <span class="price">1 900 грн.</span>
+              <button class="add-to-cart" aria-label="Додати в кошик">
+                <img src="img/icon_buy.svg" alt="Кошик" width="24" height="24">
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/nophoto.jpg" alt="Найкрутіший чайник">
+            <h3 class="product-title">Найкрутіший чайник, який треба купити!</h3>
+            <div class="product-footer">
+              <span class="price">1 900 грн.</span>
+              <button class="add-to-cart" aria-label="Додати в кошик">
+                <img src="img/icon_buy.svg" alt="Кошик" width="24" height="24">
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/nophoto.jpg" alt="Найкрутіший чайник">
+            <h3 class="product-title">Найкрутіший чайник, який треба купити!</h3>
+            <div class="product-footer">
+              <span class="price">1 900 грн.</span>
+              <button class="add-to-cart" aria-label="Додати в кошик">
+                <img src="img/icon_buy.svg" alt="Кошик" width="24" height="24">
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/nophoto.jpg" alt="Найкрутіший чайник">
+            <h3 class="product-title">Найкрутіший чайник, який треба купити!</h3>
+            <div class="product-footer">
+              <span class="price">1 900 грн.</span>
+              <button class="add-to-cart" aria-label="Додати в кошик">
+                <img src="img/icon_buy.svg" alt="Кошик" width="24" height="24">
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/nophoto.jpg" alt="Найкрутіший чайник">
+            <h3 class="product-title">Найкрутіший чайник, який треба купити!</h3>
+            <div class="product-footer">
+              <span class="price">1 900 грн.</span>
+              <button class="add-to-cart" aria-label="Додати в кошик">
+                <img src="img/icon_buy.svg" alt="Кошик" width="24" height="24">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2) Горизонтальна лінія -->
+        <hr class="sep">
+
+        <!-- 3) Пагінація під лінією -->
+        <nav class="pagination">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#" class="active">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+          </ul>
+        </nav>
+
+        <!-- 4) Текст “Про компанію” дві колонки -->
+        <div class="about">
+          <p>Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці понад 700 сайтів, тому можемо впевнено називати себе професіоналами. Наразі наша команда налічує понад 50 співробітників, які працюють у двох офісах у Києві та Львові.</p>
+          <p>Одним із основних напрямків роботи нашої компанії є пошукове просування сайтів: на даний момент ми обслуговуємо понад 150 постійних клієнтів та працюємо за більш ніж 11 000 пошукових запитів. Основний акцент робимо на якості виконання робіт та застосовуємо власні унікальні рішення в області SEO-просування.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>© 2025 Піксель Плюс</p>
+        <a href="mailto:info@name.ru">info@name.ru</a>
+      </div>
+      <nav class="footer-menu">
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка та оплата</a></li>
+          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="footer-right">
+        <img src="img/logo_companydev.svg" alt="Розробка сайту – компанія «Піксель Плюс»" width="120" height="30">
+        <p>Розробка сайту – компанія «Піксель Плюс»</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
