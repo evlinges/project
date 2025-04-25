@@ -1,0 +1,104 @@
+/* ==== FOOTER ==== */
+.site-footer {
+  width: 100%;
+  background-color: #666;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* — Ліва колонка — */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-left p,
+.footer-left a {
+  margin: 0;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+/* — Центр-меню — */
+.footer-menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;    /* центр по горизонталі */
+}
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;    /* вирівняти лінки ліворуч */
+}
+.footer-menu ul li {
+  margin-bottom: 8px;         /* відстань між пунктами */
+}
+.footer-menu ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-menu ul li a {
+  color: #fff;                /* білий текст */
+  text-decoration: none;      /* без підкреслення */
+  font-weight: 400;           /* нормальна жирність */
+  font-size: 14px;            /* розмір як у макеті */
+}
+.footer-menu ul li a:hover {
+  text-decoration: underline; /* підкреслення на hover */
+}
+
+/* — Права колонка — */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-right img {
+  width: 40px;
+  height: auto;
+}
+.footer-right p {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* ==== АДАПТИВ ==== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-menu,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-menu {
+    flex: none;
+  }
+  .footer-menu ul {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+}
