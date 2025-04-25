@@ -24,6 +24,8 @@
 
 
 
-🔗 Репозиторій
+Репозиторій
 
 [https://github.com/evlinges/project]
+Останній коміт
+[https://github.com/evlinges/project/commit/71d5bc6d8a3df0ad69142e33db44383aad17b6bf]
