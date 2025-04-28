@@ -46,14 +46,20 @@
   gap: 0px;
 }
 
+<<<<<<< HEAD
 .phone-link {
   display: block; /* Розтягує на всю ширину */
   text-align: left; /* Вирівнювання тексту вліво */
+=======
+.phones p {
+  margin: 0;
+>>>>>>> c0f4ba4691569ed4127a7fe57de7064a016b9bbf
   font-size: 35px;
   color: #444;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   line-height: 1.2;
+<<<<<<< HEAD
   text-decoration: none;
   margin-bottom: 10px;
   transition: color 0.3s;
@@ -64,6 +70,10 @@
 }
 
 
+=======
+}
+
+>>>>>>> c0f4ba4691569ed4127a7fe57de7064a016b9bbf
 .feedback-link {
   margin-top: 1px;
   font-size: 21px;

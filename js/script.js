@@ -4,7 +4,6 @@ const burger = document.getElementById('burger');
   burger.addEventListener('click', () => {
     menu.classList.toggle('active');
   });
-
 const start = Date.now();
 window.addEventListener('load', () => {
   const diff = (Date.now() - start) / 1000;
