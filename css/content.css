@@ -1,0 +1,246 @@
+/* ==========================
+   Base і типографіка
+   ========================== */
+   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+   body {
+     margin: 0;
+     padding: 0;
+     font-family: 'PT Sans', sans-serif;
+     font-size: 14px;
+     line-height: 22px;
+     color: #3e3e3e;
+     background: #fff;
+   }
+   
+   /* ==========================
+      CONTENT
+      ========================== */
+   .content {
+     padding: 40px 0;
+   }
+   .content-container {
+     max-width: 980px;
+     margin: 0 auto;
+     display: flex;
+     gap: 30px;
+   }
+   
+   /* — Sidebar — */
+   .sidebar {
+     flex: 0 0 220px;
+   }
+   
+   /* — Хлібні крихти — */
+   .breadcrumb {
+     font-size: 14px;
+     margin-bottom: 20px;
+   }
+   .breadcrumb a {
+     color: #666;
+     text-decoration: none;
+   }
+   
+   .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .category-list > li {
+    margin-bottom: 8px;
+  }
+  
+  .category-list > li > a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .subcategory-list {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-left: 20px;
+  }
+  
+  .subcategory-list.show {
+    max-height: 500px;
+  }
+  
+  .has-submenu::after {
+    content: '▶';
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .has-submenu.open::after {
+    content: '▼';
+  }
+  
+  .category-list a:visited,
+  .subcategory-list a:visited {
+    color: #333; /* НЕ міняється на фіолетовий після кліку */
+  }
+  
+  .category-list a:hover,
+  .subcategory-list a:hover {
+    color: #000; /* Чорний при наведенні */
+    text-decoration: underline;
+  }
+  
+   
+   /* Hover-ефект для обох меню */
+   .category-list li a:hover,
+   .subcategory-list li a:hover {
+     text-decoration: underline;
+   }
+   
+   /* — Блок Прайс-лист — */
+   .price-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     margin-top: 90px;
+     text-decoration: none !important;
+   }
+   .price-list img {
+     width: 120px;
+     height: 120px;
+   }
+  
+  .price-list span {
+    text-decoration: none;
+    font-size: 35px;         
+    font-weight: 1000;        
+    margin-top: 16px;        
+    color: #000;
+  }
+   
+
+   .main-content {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .catalog {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     gap: 20px;
+   }
+   
+   /* — Карточка товару — */
+   .product-card {
+     background: #e1dcdc;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 12px;
+   }
+   .product-card img {
+     width: 100%;
+     height: auto;
+     margin-bottom: 12px;
+   }
+   .product-title {
+     font-size: 16px;
+     font-weight: 400;
+     margin: 0 0 auto;
+   }
+   .product-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 12px;
+   }
+   .price {
+     font-size: 18px;
+     font-weight: 700;
+   }
+   
+   /* — Кнопка кошика — */
+   .add-to-cart {
+     background: none;
+     border: none;
+     cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
+   }
+   .add-to-cart img {
+     width: 30px;
+     height: 24px;
+     opacity: 0.7;
+     transition: opacity 0.2s;
+   }
+   .add-to-cart:hover img {
+     opacity: 1;
+   }
+   
+   /* — Горизонтальна роздільна лінія — */
+   hr.sep {
+     border: none;
+     height: 1px;
+     background-color: #ccc;
+     margin: 20px 0;
+     width: 100%;
+   }
+   
+   /* — Пагінація — */
+   .pagination {
+     text-align: center;
+     margin: 20px 0;
+   }
+   .pagination ul {
+     list-style: none;
+     display: inline-flex;
+     gap: 8px;
+     padding: 0;
+     margin: 0;
+   }
+   .pagination a {
+     text-decoration: none;
+     color: #333;
+     font-size: 14px;
+   }
+   .pagination a.active {
+    font-size: 18px;         
+    font-weight: 700;        
+    text-decoration: none;   
+  }
+   
+   /* — Блок «Про компанію» — */
+   .about {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 30px;
+     text-align: justify;
+     margin-bottom: 40px;
+   }
+   
+   /* ========================== Адаптив ========================== */
+   @media (max-width: 768px) {
+     .content-container {
+       flex-direction: column;
+     }
+     .sidebar {
+       width: 100%;
+       margin-bottom: 30px;
+     }
+     .catalog {
+       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+     }
+     .about {
+       grid-template-columns: 1fr;
+     }
+   }
+   

@@ -1,0 +1,56 @@
+/* ==== СЛАЙДЕР ==== */
+.slider-wrapper {
+  position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden; /* ховаємо зайве */
+  }
+  
+  .slider {
+    width: 100%;
+  }
+  
+  .slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider img {
+    display: block; 
+    max-width: none;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slick-prev {
+    left: 100px;
+    background-image: url('../img/left.jpg');
+  }
+  
+  .slick-next {
+    right: 100px;
+    background-image: url('../img/right.jpg');
+  }
+  
+  .slick-prev::before,
+  .slick-next::before {
+    display: none;
+  }
+  

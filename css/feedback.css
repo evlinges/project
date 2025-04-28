@@ -1,0 +1,117 @@
+/* feedback.css */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .modal-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .modal-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .modal-form .form-group {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .modal-form input,
+  .modal-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+  
+  .modal-form input.error,
+  .modal-form textarea.error {
+    border-color: #e74c3c;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 180px;                /* фіксована ширина як у макеті */
+    margin: 20px auto 0;         /* відцентрувати під формою */
+    padding: 12px 0;             /* вертикальні відступи */
+    
+    background-color: #666;      /* фон кнопки */
+    color: #fff;                 /* колір тексту */
+    border: none;
+    border-radius: 2px;          /* невелике заокруглення */
+    
+    font-size: 16px;             /* розмір шрифту */
+    font-weight: 700;            /* жирність */
+    text-transform: uppercase;   /* Всі букви великі */
+    letter-spacing: 1px;         /* інтервал між буквами */
+    
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #555;      /* трохи темніший при ховері */
+  }
+  
+  /* Повідомлення “дякую” */
+.modal-thanks {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .modal {
+      padding: 15px;
+    }
+    .modal-title {
+      font-size: 16px;
+    }
+  }
+  
